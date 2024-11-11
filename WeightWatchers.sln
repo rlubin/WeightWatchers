@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightWatchers", "WeightWatchers\WeightWatchers.csproj", "{4A521D82-274F-48CC-B62A-9B6B6565DC33}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D8962120-5533-4708-84DE-862EF36BC9E2} = {D8962120-5533-4708-84DE-862EF36BC9E2}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightWatchers.Test", "WeightWatchers.Test\WeightWatchers.Test.csproj", "{3D3A4288-E9BC-4F73-AEFA-E0E1FF87CED6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D8962120-5533-4708-84DE-862EF36BC9E2} = {D8962120-5533-4708-84DE-862EF36BC9E2}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightWatchers.Data", "WeightWatchers.Data\WeightWatchers.Data.csproj", "{D8962120-5533-4708-84DE-862EF36BC9E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F01E0B8-6A35-4F0D-979D-5F1C20394BBE}"
+	ProjectSection(SolutionItems) = preProject
+		init\init.sql = init\init.sql
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1C97314D-FC3B-4C3C-901D-65EDDD188CB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A521D82-274F-48CC-B62A-9B6B6565DC33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A521D82-274F-48CC-B62A-9B6B6565DC33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A521D82-274F-48CC-B62A-9B6B6565DC33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A521D82-274F-48CC-B62A-9B6B6565DC33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3A4288-E9BC-4F73-AEFA-E0E1FF87CED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3A4288-E9BC-4F73-AEFA-E0E1FF87CED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3A4288-E9BC-4F73-AEFA-E0E1FF87CED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3A4288-E9BC-4F73-AEFA-E0E1FF87CED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8962120-5533-4708-84DE-862EF36BC9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8962120-5533-4708-84DE-862EF36BC9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8962120-5533-4708-84DE-862EF36BC9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8962120-5533-4708-84DE-862EF36BC9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C97314D-FC3B-4C3C-901D-65EDDD188CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C97314D-FC3B-4C3C-901D-65EDDD188CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C97314D-FC3B-4C3C-901D-65EDDD188CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C97314D-FC3B-4C3C-901D-65EDDD188CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02279532-6246-427B-85C0-DA7015B5A08E}
+	EndGlobalSection
+EndGlobal

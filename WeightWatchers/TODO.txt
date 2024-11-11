@@ -1,0 +1,21 @@
+-setup database migrations
+
+
+-sql is having permissions error on pi5
+sqlserver         | exec /opt/mssql/bin/permissions_check.sh: exec format error
+sqlserver exited with code 1
+
+
+-get self-signed certs on pi5
+	-download dotnet on pi5 (bookworm 12)
+-removed https website for now (because i couldnt get ssl cert working)
+
+
+-add restart: always to all services in docker-compose?
+
+-open pi5 to public web
+-give gavin data so he can create front end
+
+-convert all username passwords to db into env variables //dont include them on github?!?
+
+-setup git for project

@@ -1,0 +1,33 @@
+services:
+  weightwatchers:
+    image: ${DOCKER_REGISTRY-}weightwatchers
+    build:
+      context: .
+      dockerfile: WeightWatchers/Dockerfile
+    depends_on:
+      sqlserver:
+        condition: service_started
+    ports:
+     - '8080:8080'
+     # - '8081:8081'
+  sqlserver:
+    platform: linux/amd64
+    container_name: sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
+    ports:
+     - '2866:1433'
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: 'yourStrong(!)Password'
+    command: /bin/bash ./entrypoint.sh
+    volumes:
+      # - ./db_data:/var/opt/mssql/data
+      - weightwatchers_db_data:/var/opt/mssql/data
+      # - ./init:/docker-entrypoint-initdb.d
+      - ./init/docker-entrypoint.sh:/entrypoint.sh
+      - ./init/docker-db-init.sh:/db-init.sh
+      - ./init/init.sql:/init.sql
+volumes:
+  # db_data:
+  weightwatchers_db_data:  
